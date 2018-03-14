@@ -12,52 +12,56 @@
   <header class="main-header">
     <a class="main-header-logo">DEVICE</a>
     <div class="user-menu">
-      <input type="search" placeholder="Поиск по сайту" class="search">
+      <form class="user-search" action="" method="post">
+        <label for="search" class="visually-hidden">Поиск по сайту</label>
+        <input type="search" name="search-field" id="search" placeholder="Поиск по сайту">
+        <button type="submit" class="button-search">Найти</button>
+      </form>
       <ul class="user-navigation">
-        <li class="user-navigation-link">
-          <a href="">Войти</a>
+        <li>
+          <a href="#">Войти</a>
         </li>
-        <li class="user-navigation-link">
-          <a href="">Сравнить</a>
+        <li>
+          <a href="#">Сравнить</a>
         </li>
-        <li class="user-navigation-link">
-          <a href="">Корзина</a>
+        <li>
+          <a href="#">Корзина</a>
         </li>
       </ul>
     </div>
-    <nav class="main-navigation">
+    <nav class="main-navigation" aria-label="Навигация по сайту">
       <ul class="site-navigation">
         <li class="catalog-menu">
           Каталог товаров
           <ul class="catalog-menu-list">
             <li>
-              <a href="">Виртуальная реальность</a>
+              <a href="#">Виртуальная реальность</a>
             </li>
             <li>
               <a href="monopods.html">Моноподы для селфи</a>
             </li>
             <li>
-              <a href="">Экшн-камеры</a>
+              <a href="#">Экшн-камеры</a>
             </li>
             <li>
-              <a href="">Фитнес-браслеты</a>
+              <a href="#">Фитнес-браслеты</a>
             </li>
             <li>
-              <a href="">Умные часы</a>
+              <a href="#">Умные часы</a>
             </li>
             <li>
-              <a href="">Квадрокоптеры</a>
+              <a href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="">Доставка</a>
+          <a href="#">Доставка</a>
         </li>
         <li>
-          <a href="">Гарантия</a>
+          <a href="#">Гарантия</a>
         </li>
         <li>
-          <a href="">Контакты</a>
+          <a href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -67,9 +71,9 @@
     <section class="items-description">
       <h2 class="visually-hidden">Описание самых популярных товаров</h2>
       <div class="items-slider">
-        <input type="radio" id="btn-1" name="toggle" checked>
-        <input type="radio" id="btn-2" name="toggle">
-        <input type="radio" id="btn-3" name="toggle">
+        <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
         <div class="items-slider-controls">
           <label for="btn-1"></label>
           <label for="btn-2"></label>
@@ -84,7 +88,7 @@
               <p>
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
               </p>
-              <a class="button" href="">Подробнее</a>
+              <a class="button" href="#">Подробнее</a>
               <table class="features">
                 <tr>
                   <td>8,5 м</td>
@@ -105,7 +109,7 @@
               <p>
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
               </p>
-              <a class="button" href="">Подробнее</a>
+              <a class="button" href="#">Подробнее</a>
               <table class="features">
                 <tr>
                   <td>48 часов</td>
@@ -122,7 +126,7 @@
               <p>
                 Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замоскированным под стандартную камеру.
               </p>
-              <a class="button" href="">Подробнее</a>
+              <a class="button" href="#">Подробнее</a>
               <table class="features">
                 <tr>
                   <td>800 м</td>
@@ -143,7 +147,7 @@
       <ul class="popular-list">
         <li>
           <h3 class="title">
-            <a href="vr.html">Виртуальная реальность</a>
+            <a href="#">Виртуальная реальность</a>
           </h3>
         </li>
         <li>
@@ -153,22 +157,22 @@
         </li>
         <li>
           <h3 class="title">
-            <a href="action-cameras.html">Экшн-камеры</a>
+            <a href="#">Экшн-камеры</a>
           </h3>
         </li>
         <li>
           <h3 class="title">
-            <a href="bands.html">Фитнес-браслет</a>
+            <a href="#">Фитнес-браслет</a>
           </h3>
         </li>
         <li>
           <h3 class="title">
-            <a href="smart-watch.html">Умные часы</a>
+            <a href="#">Умные часы</a>
           </h3>
         </li>
         <li>
           <h3 class="title">
-            <a href="drones.html">Квадрокоптеры</a>
+            <a href="#">Квадрокоптеры</a>
           </h3>
         </li>
       </ul>
@@ -176,9 +180,9 @@
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
       <div class="services-slider">
-        <input type="radio" name="service" id="delivery">
-        <input type="radio" name="service" id="warranty">
-        <input type="radio" name="service" id="credit">
+        <input class="visually-hidden" type="radio" name="service" id="delivery" checked>
+        <input class="visually-hidden" type="radio" name="service" id="warranty">
+        <input class="visually-hidden" type="radio" name="service" id="credit">
         <ul>
           <li>
             <label for="delivery">Доставка</label>
@@ -221,22 +225,22 @@
       <h2>Представленные бренды</h2>
       <ul>
         <li>
-          <a href="">
+          <a href="#">
             <img src="img/logo-dji.jpg" width="260" height="100" alt="DJI">
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <img src="img/logo-spgadgets.jpg" width="260" height="100" alt="SP GADGETS">
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <img src="img/logo-gopro.jpg" width="260" height="100" alt="GoPro">
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#">
             <img src="img/logo-vive.jpg" width="260" height="100" alt="VIVE">
           </a>
         </li>
@@ -255,63 +259,68 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a class="button" href="">Подробнее о нас</a>
+      <a class="button" href="#">Подробнее о нас</a>
     </section>
     <section class="contacts">
       <h2>Контакты</h2>
       <p>
         Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
       </p>
-      <img src="img/map.jpg" width="560" height="222">
+      <a href="https://www.google.ru/maps" target="_blank" aria-label="Открыть карту">
+        <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу улица Строителей 15, Москва">
+      </a>
       <a class="button" href="#openModal">Напишите нам</a>
     </section>
-    <form action="" method="get">
-      <button title="Закрыть" class="close">X</button>
-      <label>Ваше имя:
-        <input type="text" name="name" placeholder="Имя Фамилия">
-      </label>
-      <label>Ваш e-mail:
-        <input type="email" name="email" placeholder="email.example.com">
-      </label>
-      <label>Текст письма:
-        <textarea name="text" placeholder="В свободной форме"></textarea>
-      </label>
-      <button type="submit" name="send">Отправить</button>
+    <form action="" method="post" class="user-letter">
+      <p class="user-letter-item">
+        <label for="user-name">Ваше имя:</label>
+          <input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
+      </p>
+      <p class="user-letter-item">
+        <label for="user-email">Ваш e-mail:</label>
+          <input type="email" name="email" id="user-email" placeholder="email.example.com">
+      </p>
+      <p class="user-letter-item">
+        <label for="user-letter">Текст письма:</label>
+          <textarea name="letter" id="user-letter" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit" class="button">Отправить</button>
     </form>
+    <button type="button" class="modal-close visually-hidden">Закрыть</button>
   </main>
   <footer class="main-footer">
     <a class="logo-footer">DEVICE</a>
     <ul class="user-navigation">
-      <li class="user-navigation-link">
-        <a href="">Войти</a>
+      <li>
+        <a href="#">Войти</a>
       </li>
-      <li class="user-navigation-link">
-        <a href="">Сравнить</a>
+      <li>
+        <a href="#">Сравнить</a>
       </li>
-      <li class="user-navigation-link">
-        <a href="">Корзина</a>
+      <li>
+        <a href="#">Корзина</a>
       </li>
     </ul>
     <p>г. Москва, ул. Строителей, 15</p>
     <ul class="site-navigation">
       <li>
-        <a href="">Доставка</a>
+        <a href="#">Доставка</a>
       </li>
       <li>
-        <a href="">Гарантия</a>
+        <a href="#">Гарантия</a>
       </li>
       <li>
-        <a href="">Контакты</a>
+        <a href="#">Контакты</a>
       </li>
     </ul>
     <p>Тел.: +7 (495) 495-95-95</p>
     <div class="footer-social">
-      <a class="social-button" href="#">Фейсбук</a>
-      <a class="social-button" href="#">Инстаграм</a>
-      <a class="social-button" href="#">Твиттер</a>
+      <a class="social-button visually-hidden" href="#">Фейсбук</a>
+      <a class="social-button visually-hidden" href="#">Инстаграм</a>
+      <a class="social-button visually-hidden" href="#">Твиттер</a>
     </div>
     <p class="footer-copyright">
-      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Ссылка на лендинг интенсива «Профессиональный HTML и CSS, уровень 1»">
         <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTMLacademy">
       </a>
     </p>
