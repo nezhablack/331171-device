@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -15,6 +16,7 @@
             <form class="user-search" action="" method="post">
                 <label for="search" class="visually-hidden">Поиск по сайту</label>
                 <input type="search" name="search-field" id="search" placeholder="Поиск по сайту">
+                <button type="submit" class="button-search">Найти</button>
             </form>
             <ul class="user-navigation">
                 <li>
@@ -94,43 +96,36 @@
                     <legend class="filter-name">Цвет</legend>
                     <ul class="filter-color">
                         <li class="filter-color-option">
-                            <label>
-                                <input class="visually-hidden" type="checkbox" name="black-color" checked>Черный
-                            </label>
+                            <input class="visually-hidden" type="checkbox" id="black-color" name="black" checked>
+                            <label for="black-color">Черный</label>
                         </li>
                         <li class="filter-color-option">
-                            <label>
-                                <input class="visually-hidden" type="checkbox" name="white-color">Белый
-                            </label>
+                            <input class="visually-hidden" type="checkbox" id="white-color" name="white">
+                            <label for="white-color">Белый</label>
                         </li>
                         <li class="filter-color-option">
-                            <label>
-                                <input class="visually-hidden" type="checkbox" name="blue-color" checked>Синий
-                            </label>
+                            <input class="visually-hidden" type="checkbox" id="blue-color" name="blue" checked>
+                            <label for="blue-color">Синий</label>
                         </li>
                         <li class="filter-color-option">
-                            <label>
-                                <input class="visually-hidden" type="checkbox" name="red-color" checked>Красный
-                            </label>
+                            <input class="visually-hidden" type="checkbox" id="red-color" name="red" checked>
+                            <label for="red-color">Красный</label>
                         </li>
                         <li class="filter-color-option">
-                            <label>
-                                <input class="visually-hidden" type="checkbox" name="pink-color">Розовый
-                            </label>
+                            <input class="visually-hidden" type="checkbox" id="pink-color" name="pink">
+                            <label for="pink-color">Розовый</label>
                         </li>
                     </ul>
                 </fieldset>
                 <h3 class="filter-name">Bluetooth</h3>
                 <ul class="filter-bluetooth">
                     <li class="filter-bluetooth-option">
-                        <label>
-                            <input class="visually-hidden" type="radio" name="bluetooth-option" value="with">Есть
-                        </label>
+                        <input class="visually-hidden" type="radio" id="with-bluetooth" name="bluetooth-option" value="">
+                        <label for="with-bluetooth">Есть</label>
                     </li>
                     <li class="filter-bluetooth-option">
-                        <label>
-                            <input class="visually-hidden" type="radio" name="bluetooth-option" value="without">Нет
-                        </label>
+                        <input class="visually-hidden" type="radio" id="without-bluetooth" name="bluetooth-option" value="">
+                        <label for="without-bluetooth">Нет</label>
                     </li>
                 </ul>
                 <button type="submit" class="filter-button button">Показать</button>

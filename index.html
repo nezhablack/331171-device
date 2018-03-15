@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -272,21 +273,20 @@
       <a class="button" href="#openModal">Напишите нам</a>
     </section>
     <form action="" method="post" class="user-letter">
-      <p class="user-letter-item">
-        <label for="user-name">Ваше имя:</label>
-          <input type="text" name="name" id="user-name" placeholder="Имя Фамилия">
-      </p>
-      <p class="user-letter-item">
-        <label for="user-email">Ваш e-mail:</label>
-          <input type="email" name="email" id="user-email" placeholder="email.example.com">
-      </p>
-      <p class="user-letter-item">
-        <label for="user-letter">Текст письма:</label>
-          <textarea name="letter" id="user-letter" placeholder="В свободной форме"></textarea>
-      </p>
+      <label>Ваше имя:
+        <input type="text" name="name" placeholder="Имя Фамилия">
+      </label>
+      <label>Ваш e-mail:
+        <input type="email" name="email" placeholder="email.example.com">
+      </label>
+      <label>Текст письма:
+        <textarea name="letter" placeholder="В свободной форме"></textarea>
+      </label>
       <button type="submit" class="button">Отправить</button>
+      <button type="button" class="modal-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </form>
-    <button type="button" class="modal-close visually-hidden">Закрыть</button>
   </main>
   <footer class="main-footer">
     <a class="logo-footer">DEVICE</a>
