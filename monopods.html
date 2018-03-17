@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="main-header">
-        <a class="main-header-logo" href="index.html">DEVICE</a>
+        <a class="main-logo main-header-logo" href="index.html">DEVICE</a>
         <div class="user-menu">
             <form class="user-search" action="" method="post">
                 <label for="search" class="visually-hidden">Поиск по сайту</label>
@@ -22,8 +22,8 @@
                 <li>
                     <a href="#">Валентин Петухов</a>
                 </li>
-                <li class="logout">
-                    <a href="#">Выйти</a>
+                <li>
+                    <a href="#" class="logout">Выйти</a>
                 </li>
                 <li>
                     <a href="#">Сравнить</a>
@@ -74,45 +74,45 @@
         <h1>Моноподы для селфи</h1>
         <ul class="breadcrumbs">
             <li>
-                <a href="index.html">Главная</a>
+                <a href="index.html" class="breadcrumbs-active">Главная</a>
             </li>
             <li>
-                <a href="#">Каталог товаров</a>
+                <a href="#" class="breadcrumbs-active">Каталог товаров</a>
             </li>
-            <li class="breadcrumbs-current">
+            <li>
                 <a>Моноподы для селфи</a>
             </li>
         </ul>
         <section class="filter">
-            <h2>Фильтр:</h2>
+            <h2 class="filter-title">Фильтр:</h2>
             <form class="filter" action="" method="get">
                 <h3 class="filter-name">Стоимость</h3>
                 <div class="filter-price">
                     <label>
-                        <input type="range" name="rating" min="0" max="10000" step="1000" value="0, 10000" multiple>
+                        <input class="filter-input filter-input-range" type="range" name="rating" min="0" max="10000" step="500" value="0, 10000" multiple>
                     </label>
                 </div>
                 <fieldset>
                     <legend class="filter-name">Цвет</legend>
                     <ul class="filter-color">
                         <li class="filter-color-option">
-                            <input class="visually-hidden" type="checkbox" id="black-color" name="black" checked>
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="black-color" name="black" checked>
                             <label for="black-color">Черный</label>
                         </li>
                         <li class="filter-color-option">
-                            <input class="visually-hidden" type="checkbox" id="white-color" name="white">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="white-color" name="white">
                             <label for="white-color">Белый</label>
                         </li>
                         <li class="filter-color-option">
-                            <input class="visually-hidden" type="checkbox" id="blue-color" name="blue" checked>
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="blue-color" name="blue" checked>
                             <label for="blue-color">Синий</label>
                         </li>
                         <li class="filter-color-option">
-                            <input class="visually-hidden" type="checkbox" id="red-color" name="red" checked>
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="red-color" name="red" checked>
                             <label for="red-color">Красный</label>
                         </li>
                         <li class="filter-color-option">
-                            <input class="visually-hidden" type="checkbox" id="pink-color" name="pink">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="pink-color" name="pink">
                             <label for="pink-color">Розовый</label>
                         </li>
                     </ul>
@@ -120,11 +120,11 @@
                 <h3 class="filter-name">Bluetooth</h3>
                 <ul class="filter-bluetooth">
                     <li class="filter-bluetooth-option">
-                        <input class="visually-hidden" type="radio" id="with-bluetooth" name="bluetooth-option" value="">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" id="with-bluetooth" name="bluetooth-option" value="">
                         <label for="with-bluetooth">Есть</label>
                     </li>
                     <li class="filter-bluetooth-option">
-                        <input class="visually-hidden" type="radio" id="without-bluetooth" name="bluetooth-option" value="">
+                        <input class="visually-hidden filter-input filter-input-radio" type="radio" id="without-bluetooth" name="bluetooth-option" value="">
                         <label for="without-bluetooth">Нет</label>
                     </li>
                 </ul>
@@ -132,10 +132,10 @@
             </form>
         </section>
         <section class="sort">
-            <h2>Сортировка:</h2>
+            <h2 class="sort-title">Сортировка:</h2>
             <ul class="sort-list">
                 <li>
-                    <a href="?sort=price&order=desc">По цене</a>
+                    <a href="?sort=price&order=desc" class="active">По цене</a>
                 </li>
                 <li>
                     <a href="?sort=type&order=desc">По типу</a>
@@ -144,12 +144,8 @@
                     <a href="?sort=popularity&order=desc">По популярности</a>
                 </li>
             </ul>
-            <a href="#">
-                <img src="img/icon-up-dir.svg" width="11" height="10" alt="Расположить товары по возрастанию">
-            </a>
-            <a href="#">
-                <img src="img/icon-down-dir.svg" width="11" height="10" alt="Расположить товары по убыванию">
-            </a>
+            <a href="#" class="order-link asc" aria-label="Расположить товары по возрастанию"></a>
+            <a href="#" class="order-link desc" aria-label="Расположить товары по убыванию"></a>
         </section>
         <section class="catalog">
             <h2 class="visually-hidden">Список моноподов</h2>
@@ -201,10 +197,10 @@
             </ul>
             <ul class="pagination-list" aria-label="Навигация по страницам с моноподами">
                 <li class="pagination-item pagination-back">
-                    <a>Назад</a>
+                    <a class="active">Назад</a>
                 </li>
-                <li class="pagination-item pagination-item-current">
-                    <a>1</a>
+                <li class="pagination-item pagination-current">
+                    <a class="active">1</a>
                 </li>
                 <li class="pagination-item">
                     <a href="#">2</a>
@@ -213,18 +209,18 @@
                     <a href="#">3</a>
                 </li>
                 <li class="pagination-item pagination-forward">
-                    <a href="#">Вперед</a>
+                    <a href="#" class="active">Вперед</a>
                 </li>
         </section>
     </main>
     <footer class="main-footer">
-        <a class="logo-footer" href="index.html">DEVICE</a>
+        <a class="main-logo main-footer-logo" href="index.html">DEVICE</a>
         <ul class="user-navigation">
             <li>
                 <a href="#">Валентин Петухов</a>
             </li>
-            <li class="logout">
-                <a href="#">Выйти</a>
+            <li>
+                <a href="#" class="logout">Выйти</a>
             </li>
             <li>
                 <a href="#">Сравнить</a>
@@ -251,11 +247,7 @@
             <a class="social-button visually-hidden" href="#">Инстаграм</a>
             <a class="social-button visually-hidden" href="#">Твиттер</a>
         </div>
-        <p class="footer-copyright">
-            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Ссылка на лендинг интенсива «Профессиональный HTML и CSS, уровень 1»">
-                <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTMLacademy">
-            </a>
-        </p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-link" target="_blank" aria-label="Ссылка на лендинг интенсива «Профессиональный HTML и CSS, уровень 1»"></a>
     </footer>
 </body>
 

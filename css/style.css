@@ -1,0 +1,440 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 300;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.button-search {
+    display: none;
+}
+
+input[type="search"]:focus + button {
+    display: block;
+    width: 85px;
+    height: 49px;
+    border: 3px solid #000000;
+}
+
+input[type="search"] + button:hover,
+input[type="search"] + button:focus {
+    display: block;
+    width: 85px;
+    height: 49px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+input[type="search"] + button:active {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.main-header {
+    background-image: linear-gradient(#ffffff 40px, #f7e296 40px, #f7e296 300px, #ffffff 300px);
+}
+
+.main-logo {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.main-header-logo {
+    color: #000000;
+}
+
+.main-footer-logo {
+    color: #ffc600;
+}
+
+.user-navigation,
+.site-navigation,
+.catalog-menu-list,
+.popular-list,
+.services-list,
+.transport-list,
+.brands-list,
+.breadcrumbs,
+.sort-list,
+.catalog-list,
+.pagination-list,
+.filter-color,
+.filter-bluetooth {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-navigation,
+.button {
+    font-family:  "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.catalog-menu-list a {
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.user-navigation a,
+.site-navigation a,
+.catalog-menu-list a,
+.popular-list a,
+.services-list a,
+.breadcrumbs a,
+.sort-list a,
+.catalog-list a,
+.pagination-list a {
+    color: #000000;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus,
+a.main-logo:hover,
+a.main-logo:focus,
+a.html-link:hover,
+a.html-link:focus, 
+.breadcrumbs a.breadcrumbs-active:hover,
+.breadcrumbs a.breadcrumbs-active:focus {
+    opacity: 0.6;
+}
+
+.user-navigation a:active,
+.site-navigation a:active,
+a.main-logo:active,
+a.html-link:active,
+.popular-list a:active,
+.breadcrumbs a,
+.button:active,
+.user-navigation a.logout,
+.sort-list a,
+.pagination-list a {
+    opacity: 0.3;
+}
+
+.breadcrumbs a.breadcrumbs-active:active {
+    opacity: 0.1;
+}
+
+b {
+    font-family:  "Gilroy", Arial, sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.features {
+    border-collapse: collapse;
+}
+.features-quality {
+    width: 140px;
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding: 0;
+}
+
+.features-quality:first-child {
+    width: 160px;
+}
+
+h3.popular-title,
+h3.title,
+.filter legend,
+.filter-name {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.services {
+    background-image: linear-gradient(#ffffff 100px, #e5e5e5 100px,  #e5e5e5 390px, #ffffff 390px);
+}
+
+h3.services-title {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 47px;
+    line-height: 57px;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.button-services {
+    letter-spacing: 0.2em;
+}
+
+.brands-list .brand-link {
+    display: block;
+    width: 260px;
+    height: 100px;
+    opacity: 0.2;
+}
+
+.brands-list .dji {
+    background-image: url('../img/logo-dji.jpg');
+    opacity: 0.2;
+}
+
+.brands-list .dji:hover,
+.brands-list .dji:focus {
+    background-image: url('../img/logo-dji-hover.jpg');
+    opacity: 1;
+}
+
+.brands-list .sp-gadgets {
+    background-image: url('../img/logo-spgadgets.jpg');
+    opacity: 0.2;
+}
+
+.brands-list .sp-gadgets:hover,
+.brands-list .sp-gadgets:focus {
+    background-image: url('../img/logo-spgadgets-hover.jpg');
+    opacity: 1;
+}
+
+.brands-list .go-pro {
+    background-image: url('../img/logo-gopro.jpg');
+    opacity: 0.2;
+}
+
+.brands-list .go-pro:hover,
+.brands-list .go-pro:focus {
+    background-image: url('../img/logo-gopro-hover.jpg');
+    opacity: 1;
+}
+
+.brands-list .vive {
+    background-image: url('../img/logo-vive.jpg');
+    opacity: 0.2;
+}
+
+.brands-list .vive:hover,
+.brands-list .vive:focus {
+    background-image: url('../img/logo-vive-hover.jpg');
+    opacity: 1;
+}
+
+h2 {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 47px;
+    line-height: 57px;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.transport-list {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 800;
+}
+
+.user-letter input[type="text"],
+.user-letter input[type="email"],
+.user-letter textarea {
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.user-letter input:hover,
+.user-letter textarea:hover {
+    background-color: #eaeaea;
+}
+
+.user-letter input:focus,
+.user-letter textarea:focus {
+    background-color: #ffffff;
+    outline-width: 1px;
+    outline-color:  #ffc600;
+}
+
+.user-letter input:invalid,
+.user-letter textarea:invalid {
+    background-color: #f6dada;
+    outline:  none;
+}
+
+
+.user-letter label {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.user-letter input,
+.user-letter textarea {
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+}
+
+.main-footer {
+    background-color: #464646;
+}
+
+.html-link {
+    display: block;
+    width: 27px;
+    height: 35px;
+    opacity: 1;
+    background-image: url('../img/logo-html.svg');
+}
+/* Разметка второй страницы*/
+
+h1 {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 47px;
+    line-height: 57px;
+    font-weight: 800;
+}
+
+.filter-title,
+.sort-title,
+.pagination-list {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.sort-list {
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.sort-list a.active,
+.pagination-list a.active {
+    opacity: 1;
+}
+
+.order-link {
+    display: block;
+    width: 11px;
+    height: 10px;
+    background-image: url('../img/logo-html.svg');
+}
+
+.asc {
+    background-image: url('../img/icon-up-dir.svg');
+    opacity: 0.2;
+}
+
+.desc {
+    background-image: url('../img/icon-down-dir.svg');
+}
+
+.price {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.compare {
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.compare:hover,
+.compare:focus {
+    opacity: 1;
+}
+
+.compare:active {
+    opacity: 0.2;
+}
+
+.filter,
+.sort {
+    background-color:  #ebebeb;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter-price,
+.filter-color,
+.filter-bluetooth {
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.filter-input:hover,
+.filter-input:focus {
+    opacity: 0.6;
+}
+
+.filter-input:disabled + label {
+    color: #a6a6a6;
+    opacity: 0.25;
+}
+
+.pagination-list {
+    background-color: #ebebeb;
+}
+ 
+.pagination-back a:hover,
+.pagination-back a:focus,
+.pagination-back a:active,
+.pagination-forward a:hover,
+.pagination-forward a:focus,
+.pagination-forward a:active {
+    background-color: #d9d9d9;
+}
+
+.pagination-back a:active,
+.pagination-forward a:active {
+    color: rgba(0, 0, 0, 0.3);
+}

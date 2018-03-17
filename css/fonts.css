@@ -1,35 +1,37 @@
 @font-face {
-    font-family: Gilroy;
+    font-family: 'Gilroy';
     src:
-        local(Gilroy),
-        url("../fonts/gilroy/Gilroyextrabold.ttf") format("truetype");
+        local('Gilroy'),
+        url("../fonts/web/gilroyextrabold.woff2") format("woff2");
     font-style: normal;
     font-weight: bold;
 }
 
 @font-face {
-    font-family: Gilroy;
+    font-family: 'Gilroy';
     src:
         local(Gilroy),
-        url("../fonts/gilroy/Gilroylight.ttf") format("truetype");
+        url("../fonts/web/gilroylight.woff2") format("woff2");
     font-style: normal;
     font-weight: light;
 }
 
 @font-face {
-    font-family: OpenSans;
+    font-family: 'OpenSans';
     src:
-        local(OpenSans),
-        url("../fonts/open_sans/OpenSans-Light.ttf") format("truetype");
+        local('OpenSans'),
+        url("../fonts/web/opensanslight.woff2") format("woff2");
     font-style: normal;
     font-weight: light;
 }
 
 @font-face {
-    font-family: OpenSans;
+    font-family: 'OpenSans';
     src:
-        local(OpenSans),
-        url("../fonts/open_sans/OpenSans-Regular.ttf") format("truetype");
+        local('OpenSans'),
+        url("../fonts/web/opensans.woff2") format("woff2");
     font-style: normal;
     font-weight: normal;
 }
+
+

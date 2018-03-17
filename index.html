@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
-    <a class="main-header-logo">DEVICE</a>
+    <a class="main-logo main-header-logo">DEVICE</a>
     <div class="user-menu">
       <form class="user-search" action="" method="post">
         <label for="search" class="visually-hidden">Поиск по сайту</label>
@@ -89,17 +89,17 @@
               <p>
                 Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
               </p>
-              <a class="button" href="#">Подробнее</a>
+              <a class="button details" href="#">Подробнее</a>
               <table class="features">
                 <tr>
-                  <td>8,5 м</td>
-                  <td>5 кг</td>
-                  <td>Карбон</td>
+                  <td class="features-quality">8,5 м</td>
+                  <td class="features-quality">5 кг</td>
+                  <td class="features-quality">Карбон</td>
                 </tr>
                 <tr>
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
+                  <td class="features-description">Длина палки</td>
+                  <td class="features-description">Вес палки</td>
+                  <td class="features-description">Материал</td>
                 </tr>
               </table>
             </article>
@@ -110,32 +110,32 @@
               <p>
                 Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
               </p>
-              <a class="button" href="#">Подробнее</a>
+              <a class="button details" href="#">Подробнее</a>
               <table class="features">
                 <tr>
-                  <td>48 часов</td>
+                  <td class="features-quality">48 часов</td>
                 </tr>
                 <tr>
-                  <td>Без подзарядки</td>
+                  <td class="features-description">Без подзарядки</td>
                 </tr>
               </table>
             </article>
             <article class="promo-slider-slide">
               <h3 class="visually-hidden">Квадрокоптер с мощным лазером</h3>
               <img src="img/slider-drone.png" width="526" height="334" alt="Квадрокоптер">
-              <b>Пархает как бабочка, жалит как пчела!</b>
+              <b>Порхает как бабочка, жалит как пчела!</b>
               <p>
-                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замоскированным под стандартную камеру.
+                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
               </p>
-              <a class="button" href="#">Подробнее</a>
+              <a class="button details" href="#">Подробнее</a>
               <table class="features">
                 <tr>
-                  <td>800 м</td>
-                  <td>50 м</td>
+                  <td class="features-quality">800 м</td>
+                  <td class="features-quality">50 м</td>
                 </tr>
                 <tr>
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
+                  <td class="features-description">Дальность полета</td>
+                  <td class="features-description">Радиус поражения</td>
                 </tr>
               </table>
             </article>
@@ -147,32 +147,32 @@
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular-list">
         <li>
-          <h3 class="title">
+          <h3 class="popular-title">
             <a href="#">Виртуальная реальность</a>
           </h3>
         </li>
         <li>
-          <h3 class="title">
+          <h3 class="popular-title">
             <a href="monopods.html">Монопод для селфи</a>
           </h3>
         </li>
         <li>
-          <h3 class="title">
+          <h3 class="popular-title">
             <a href="#">Экшн-камеры</a>
           </h3>
         </li>
         <li>
-          <h3 class="title">
+          <h3 class="popular-title">
             <a href="#">Фитнес-браслет</a>
           </h3>
         </li>
         <li>
-          <h3 class="title">
+          <h3 class="popular-title">
             <a href="#">Умные часы</a>
           </h3>
         </li>
         <li>
-          <h3 class="title">
+          <h3 class="popular-title">
             <a href="#">Квадрокоптеры</a>
           </h3>
         </li>
@@ -184,36 +184,36 @@
         <input class="visually-hidden" type="radio" name="service" id="delivery" checked>
         <input class="visually-hidden" type="radio" name="service" id="warranty">
         <input class="visually-hidden" type="radio" name="service" id="credit">
-        <ul>
+        <ul class="services-list">
           <li>
-            <label for="delivery">Доставка</label>
+            <label for="delivery" class="button button-service">Доставка</label>
           </li>
           <li>
-            <label for="warranty">Гарантия</label>
+            <label for="warranty" class="button button-service">Гарантия</label>
           </li>
           <li>
-            <label for="credit">Кредит</label>
+            <label for="credit" class="button button-service">Кредит</label>
           </li>
         </ul>
       </div>
       <div class="services-slider-inner">
         <div class="services-slider-slides">
           <div class="services-slider-slide">
-            <h3>Доставка</h3>
+            <h3 class="services-title">Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая
               его на ваш этаж.
             </p>
           </div>
           <div class="services-slider-slide">
-            <h3>Гарантия</h3>
+            <h3 class="services-title">Гарантия</h3>
             <p>
               Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно
               же.
             </p>
           </div>
           <div class="services-slider-slide">
-            <h3>Кредит</h3>
+            <h3 class="services-title">Кредит</h3>
             <p>
               Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для
               нашего банка, разумеется.
@@ -223,27 +223,19 @@
       </div>
     </section>
     <section class="brands">
-      <h2>Представленные бренды</h2>
-      <ul>
+      <h2 class="visually-hidden">Представленные бренды</h2>
+      <ul class="brands-list">
         <li>
-          <a href="#">
-            <img src="img/logo-dji.jpg" width="260" height="100" alt="DJI">
-          </a>
+          <a href="#" aria-label="Бренд DJI" class="brand-link dji"></a>
         </li>
         <li>
-          <a href="#">
-            <img src="img/logo-spgadgets.jpg" width="260" height="100" alt="SP GADGETS">
-          </a>
+          <a href="#" aria-label="Бренд SP GADGETS" class="brand-link sp-gadgets"></a>
         </li>
         <li>
-          <a href="#">
-            <img src="img/logo-gopro.jpg" width="260" height="100" alt="GoPro">
-          </a>
+          <a href="#" aria-label="Бренд GoPro" class="brand-link go-pro"></a>
         </li>
         <li>
-          <a href="#">
-            <img src="img/logo-vive.jpg" width="260" height="100" alt="VIVE">
-          </a>
+          <a href="#" aria-label="Бренд VIVE" class="brand-link vive"></a>
         </li>
       </ul>
     </section>
@@ -255,7 +247,7 @@
       <p>
         Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
       </p>
-      <ul>
+      <ul class="transport-list">
         <li>Деловые линии</li>
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
@@ -280,7 +272,7 @@
         <input type="email" name="email" placeholder="email.example.com">
       </label>
       <label>Текст письма:
-        <textarea name="letter" placeholder="В свободной форме"></textarea>
+        <textarea name="letter" rows="3" placeholder="В свободной форме"></textarea>
       </label>
       <button type="submit" class="button">Отправить</button>
       <button type="button" class="modal-close">
@@ -289,7 +281,7 @@
     </form>
   </main>
   <footer class="main-footer">
-    <a class="logo-footer">DEVICE</a>
+    <a class="main-logo main-footer-logo">DEVICE</a>
     <ul class="user-navigation">
       <li>
         <a href="#">Войти</a>
@@ -315,15 +307,11 @@
     </ul>
     <p>Тел.: +7 (495) 495-95-95</p>
     <div class="footer-social">
-      <a class="social-button visually-hidden" href="#">Фейсбук</a>
-      <a class="social-button visually-hidden" href="#">Инстаграм</a>
-      <a class="social-button visually-hidden" href="#">Твиттер</a>
+      <a class="social social-fb visually-hidden" href="#">Фейсбук</a>
+      <a class="social social-insta visually-hidden" href="#">Инстаграм</a>
+      <a class="social social-twitter visually-hidden" href="#">Твиттер</a>
     </div>
-    <p class="footer-copyright">
-      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Ссылка на лендинг интенсива «Профессиональный HTML и CSS, уровень 1»">
-        <img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTMLacademy">
-      </a>
-    </p>
+    <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-link" target="_blank" aria-label="Ссылка на лендинг интенсива «Профессиональный HTML и CSS, уровень 1»"></a>
   </footer>
 </body>
 
