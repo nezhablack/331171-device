@@ -35,6 +35,11 @@ button {
     display: none;
 }
 
+input[type="search"] {
+    background-color: #f7e296;
+    border: none;
+}
+
 input[type="search"]:focus + button {
     display: block;
     width: 85px;
@@ -56,7 +61,7 @@ input[type="search"] + button:active {
 }
 
 .main-header {
-    background-image: linear-gradient(#ffffff 40px, #f7e296 40px, #f7e296 300px, #ffffff 300px);
+    background-image: linear-gradient(#ffffff 30px, #f7e296 30px, #f7e296 290px, #ffffff 290px);
 }
 
 .main-logo {
@@ -64,6 +69,7 @@ input[type="search"] + button:active {
     font-size: 48px;
     line-height: 58px;
     font-weight: 800;
+    letter-spacing: 0.01;
     text-transform: uppercase;
 }
 
@@ -115,13 +121,22 @@ input[type="search"] + button:active {
 .user-navigation a,
 .site-navigation a,
 .catalog-menu-list a,
+.details,
 .popular-list a,
 .services-list a,
+.about-us a,
+.contacts a,
 .breadcrumbs a,
 .sort-list a,
 .catalog-list a,
 .pagination-list a {
     color: #000000;
+}
+
+.main-footer .user-navigation a,
+.main-footer .site-navigation a,
+.main-footer p {
+    color: #ffffff;
 }
 
 .user-navigation a:hover,
@@ -438,3 +453,85 @@ h1 {
 .pagination-forward a:active {
     color: rgba(0, 0, 0, 0.3);
 }
+
+/* -- Сеточные стили -- */
+.main-header {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px; 
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.user-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 38px;
+}
+
+.user-search {
+    width: 440px;
+}
+
+.user-navigation {
+    display: flex;
+    width: 500px;
+}
+
+.site-navigation {
+    display: flex;
+}
+
+.site-navigation li:last-child {
+    margin-left: 105px;
+}
+
+.site-navigation li:nth-child(3) {
+    margin-left: 35px;
+}
+
+.catalog-menu {
+    position: relative;
+    display: block;
+    margin-left: -1px;
+    margin-right: auto;
+    margin-bottom: 38px;
+}
+
+.catalog-menu-list {
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: 1px;
+    width: 840px;
+    height: 130px;
+    margin: 0;
+    padding: 0;
+    background-color: #f7e296;
+}
+
+.catalog-menu:hover .catalog-menu-list {
+    display: block;
+}
+/*,
+
+.user-navigation 
+    
+.main-navigation
+    {
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+.user-navigation li {
+    flex-grow: 1;
+    text-align: right;
+}
+.user-navigation :first-child {
+    flex-grow: 2;
+    text-align: left;
+}
+.user-navigation {
+    display: flex;
+}
+*/
