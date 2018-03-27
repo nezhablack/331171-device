@@ -85,7 +85,7 @@
             <article class="promo-slider-slide promo-slide-1">
               <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
               <img class="promo-image-monopod" src="img/slider-monopod.png" width="384" height="486" alt="Моноподы">
-              <div class="promo-positioner-1">
+              <div class="promo-positioner promo-positioner-1">
                 <b class="promo-motto">Делай селфи, как&#160;Бен Стиллер!</b>
                 <p>
                   Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
@@ -108,7 +108,7 @@
             <article class="promo-slider-slide promo-slide-2">
               <h3 class="visually-hidden">Мотивирующий фитнес-браслет</h3>
               <img class="promo-image-band" src="img/slider-band.png" width="345" height="485" alt="Фитнес-браслет">
-              <div class="promo-positioner-2">
+              <div class="promo-positioner promo-positioner-2">
                 <b class="promo-motto">Худеем правильно!</b>
                 <p>
                   Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
@@ -127,7 +127,7 @@
             <article class="promo-slider-slide promo-slide-3">
               <h3 class="visually-hidden">Квадрокоптер с мощным лазером</h3>
               <img class="promo-image-drone" src="img/slider-drone.png" width="526" height="334" alt="Квадрокоптер">
-              <div class="promo-positioner-3">
+              <div class="promo-positioner promo-positioner-3">
                 <b class="promo-motto">Порхает как&#160;бабочка, жалит как&#160;пчела!</b>
                 <p>
                   Этот обычный, на первый взгляд, квадрокоптер оснащен мощным&#160;лазером, замаскированным под стандартную камеру.
@@ -280,10 +280,19 @@
           <p class="contacts-info">
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
-          <a class="map-link" href="https://www.google.ru/maps" target="_blank" aria-label="Открыть карту">
+          <a class="map-link" href="#" target="_blank" aria-label="Открыть карту">
             <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу улица Строителей 15, Москва">
           </a>
           <a class="button write-us" href="#openModal">Напишите нам</a>
+        </section>
+        <section class="modal modal-map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779994!2d37.52742931633158!3d55.68703098053579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522138123703"
+            width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <img class="image-map" src="img/map-big.jpg" width="960" height="560" alt="Офис компании по адресу улица Строителей 15, Москва">
+          <button class="modal-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
         </section>
       </div>
     </div>
@@ -377,6 +386,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

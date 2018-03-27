@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="inner-page">
     <header class="main-header">
         <a class="main-logo main-logo-pages main-header-logo" href="index.html">DEVICE</a>
         <div class="user-menu">
@@ -88,7 +88,6 @@
         </div>
         <section class="sort">
             <div class="sort-layout">
-
                 <div class="sort-positioner">
                     <h2 class="sort-title">Сортировка:</h2>
                     <ul class="sort-list">
@@ -111,48 +110,62 @@
             <section class="filter">
                 <h2 class="filter-title">Фильтр:</h2>
                 <form class="filter-form" action="" method="get">
-                    <h3 class="filter-name">Стоимость</h3>
                     <div class="filter-price">
-                        <label>
-                            <input class="filter-input filter-input-range" type="range" name="rating" min="0" max="10000" step="500" value="0, 10000"
-                                multiple>
-                        </label>
+                        <h3 class="filter-name">Стоимость</h3>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle toggle-min"></div>
+                                <div class="toggle toggle-max"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="price-label min-price">от
+                                    <input class="price-input" name="min-price" type="text" value="0">
+                                </label>
+                                <label class="price-label max-price">до
+                                    <input class="price-input" name="max-price" type="text" value="5000">
+                                </label>
+                            </div>
+                        </div>
                     </div>
                     <fieldset class="filter-color">
                         <legend class="filter-name">Цвет</legend>
                         <ul class="filter-color-list">
                             <li class="filter-color-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="black-color" name="black" checked>
-                                <label for="black-color">Черный</label>
+                                <label class="filter-color-label filter-label" for="black-color">Черный</label>
                             </li>
                             <li class="filter-color-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="white-color" name="white">
-                                <label for="white-color">Белый</label>
+                                <label class="filter-color-label filter-label" for="white-color">Белый</label>
                             </li>
                             <li class="filter-color-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="blue-color" name="blue" checked>
-                                <label for="blue-color">Синий</label>
+                                <label class="filter-color-label filter-label" for="blue-color">Синий</label>
                             </li>
                             <li class="filter-color-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="red-color" name="red" checked>
-                                <label for="red-color">Красный</label>
+                                <label class="filter-color-label filter-label" for="red-color">Красный</label>
                             </li>
                             <li class="filter-color-option">
                                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="pink-color" name="pink">
-                                <label for="pink-color">Розовый</label>
+                                <label class="filter-color-label filter-label" for="pink-color">Розовый</label>
                             </li>
                         </ul>
                     </fieldset>
                     <h3 class="filter-name">Bluetooth</h3>
                     <ul class="filter-bluetooth-list">
                         <li class="filter-bluetooth-option">
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio" id="with-bluetooth" name="bluetooth-option" value="">
-                            <label for="with-bluetooth">Есть</label>
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio" id="with-bluetooth" name="bluetooth-option" value=""
+                                checked>
+                            <label class="filter-bluetooth-label filter-label" for="with-bluetooth">Есть</label>
                         </li>
                         <li class="filter-bluetooth-option">
                             <input class="visually-hidden filter-input filter-input-radio" type="radio" id="without-bluetooth" name="bluetooth-option"
                                 value="">
-                            <label for="without-bluetooth">Нет</label>
+                            <label class="filter-bluetooth-label filter-label" for="without-bluetooth">Нет</label>
                         </li>
                     </ul>
                     <button type="submit" class="filter-button button">Показать</button>
@@ -174,7 +187,7 @@
                     </li>
                     <li class="catalog-item">
                         <h3 class="catalog-item-title">
-                            <a class="catalog-item-link" href="#">Профессиональная селфи-палка</a>
+                            <a class="catalog-item-link" href="#">Профессиональная селфи&#160;-&#160;палка</a>
                         </h3>
                         <span class="price">1 500 руб.</span>
                         <img class="catalog-item-image" src="img/monopod-professional.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
@@ -211,7 +224,7 @@
                         <a class="pagination-link pagination-back active">Назад</a>
                     </li>
                     <li class="pagination-item pagination-current">
-                        <a class="pagination-link active">1</a>
+                        <a class="pagination-link current">1</a>
                     </li>
                     <li class="pagination-item">
                         <a class="pagination-link" href="#">2</a>
