@@ -86,15 +86,15 @@ a {
 
 .user-search {
     box-sizing: border-box;
-    width: 440px;
-    margin-right: 100px;
+    width: 450px;
 }
 
 .search-field {
     background-color: #f7e296;
     border: none;
-    width: 350px;
+    width: 358px;
     padding-left: 40px;
+    padding-right: 10px;
     padding-bottom: 14px;
     background-image: url("../img/search.svg");
     background-repeat: no-repeat;
@@ -352,7 +352,7 @@ a {
     position: relative;
     z-index: 2;
     display: none;
-    margin-bottom: 108px;
+    margin-bottom: 112px;
     padding-top: 80px;
     padding-left: 599px;
     background-image: linear-gradient(#f7e296 113px, #ffffff 113px);
@@ -361,7 +361,7 @@ a {
 .promo-slider-slide::before {
     position: absolute;
     top: 62px;
-    right: 50px;
+    right: 49px;
     z-index: -1;
     font-family: "Gilroy", Arial, sans-serif;
     font-weight: 800;
@@ -447,8 +447,8 @@ a {
     position: relative;
     display: block;
     z-index: 0;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
     font-family:  "Gilroy", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -466,25 +466,26 @@ a {
 .button::before {
     content: "";
     position: absolute;
-    top: 18px;
+    top: 40%;
     left: 0;
     z-index: -1;
     width: 100%;
-    height: 8px;
+    height: 20%;
     background-color: #ffc600;
+    transition: all 0.3s;
 }
 
 .button:hover::before,
 .button:focus::before {
-    transform: scale(1, 5);
-    transition: all 0.3s;
+    top: 0;
+    height: 100%;
 }
 
 .details {
     width: 150px;
     padding-right: 25px;
     padding-left: 45px;
-    margin-top: 42px;
+    margin-top: 44px;
 }
 
 .popular {
@@ -610,14 +611,14 @@ a {
     margin: 0;
     padding: 0;
     margin-right: 95px;
-    padding-top: 77px;
-    padding-bottom: 47px;
+    padding-top: 79px;
+    padding-bottom: 48px;
     list-style: none;
     border-right: 7px solid #000000;
 }
 
 .services-item {
-    margin-bottom: 21px;
+    margin-bottom: 24px;
 }
 
 .services-title {
@@ -686,7 +687,9 @@ a {
 }
 
 .button-service-active::before {
-    transform: scale(1, 5);
+    top: 0;
+    width:280px;
+    height: 100%;
     background-color: #000000;
 }
 
@@ -795,7 +798,7 @@ a {
     font-family: "Gilroy", Arial, sans-serif;
     font-weight: 800;
     margin-top: 70px;
-    margin-bottom: 57px;
+    margin-bottom: 60px;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
@@ -841,7 +844,7 @@ a {
     display: block;
     width: 560px;
     height: 222px;
-    margin-bottom: 65px;
+    margin-bottom: 67px;
 }
 
 .modal {
@@ -1070,10 +1073,8 @@ a {
 .footer-site-navigation {
     width: 455px;
     margin: 0;
-    padding-right: 0;
-    padding-left: 0;
-    padding-bottom: 0;
-    padding-top: 5px;
+    margin-top: 10px;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
