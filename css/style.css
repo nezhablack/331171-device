@@ -1,3 +1,39 @@
+@font-face {
+    font-family: 'Gilroy';
+    src:
+        local('Gilroy'),
+        url("../fonts/web/gilroyextrabold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src:
+        local(Gilroy),
+        url("../fonts/web/gilroylight.woff2") format("woff2");
+    font-style: normal;
+    font-weight: light;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src:
+        local('OpenSans'),
+        url("../fonts/web/opensanslight.woff2") format("woff2");
+    font-style: normal;
+    font-weight: light;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src:
+        local('OpenSans'),
+        url("../fonts/web/opensans.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -223,7 +259,7 @@ a {
 }
 
 .header-contacts {
-    margin-left: 108px;
+    margin-left: 105px;
 }
 
 .catalog-menu {
@@ -337,6 +373,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: pointer;
 }
 
 .slider-btn-active {
@@ -612,13 +649,13 @@ a {
     padding: 0;
     margin-right: 95px;
     padding-top: 79px;
-    padding-bottom: 48px;
+    padding-bottom: 45px;
     list-style: none;
     border-right: 7px solid #000000;
 }
 
 .services-item {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
 
 .services-title {
@@ -651,23 +688,27 @@ a {
 .services-slide::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 530px;
-    width: 190px;
+    width: 175px;
     height: 194px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .services-slide-1::after {
+    top: 2px;
+    left: 538px;
     background-image: url("../img/delivery.svg");
 }
 
 .services-slide-2::after {
+    top: -6px;
+    left: 541px;
     background-image: url("../img/warranty.svg");
 }
 
 .services-slide-3::after {
+    top: -10px;
+    left: 524px;
     background-image: url("../img/credit.svg");
 }
 
@@ -758,7 +799,7 @@ a {
     max-width: 1160px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
+    margin-bottom: 82px;
 }
 
 .company-info-positioner {
@@ -844,7 +885,7 @@ a {
     display: block;
     width: 560px;
     height: 222px;
-    margin-bottom: 67px;
+    margin-bottom: 69px;
 }
 
 .modal {
@@ -1222,21 +1263,20 @@ a {
 }
 
 .header-logout {
-    padding-left: 10px;
+    margin-left: 19px;
     opacity: 0.3;
 }
 
 .user-logout {
     display: block;
-    padding-left: 9px;
 }
 
 .user-login-compare {
     margin-left: 60px;
-    margin-right: 42px;
+    margin-right: 47px;
 }
 
-.user-login-compare::before {
+.user-login-compare .user-link::before {
     content: "";
     position: absolute;
     top: 8px;
@@ -1436,22 +1476,21 @@ a {
     background-color: #000000;
 }
 
+.filter-input + .filter-label::before {
+    opacity: 1;
+}
+
 .filter-input:hover + .filter-label::before,
-.filter-input:hover + .filter-label::after,
-.filter-input:focus + .filter-label::before,
-.filter-input:focus + .filter-label::after {
+.filter-input:focus + .filter-label::before {
     opacity: 0.6;
 }
 
-.filter-input:focus + .filter-label {
-    outline-width: 1px;
-    outline-color: #a6a6a6;
-    outline-style: solid;
+.filter-input + .filter-label::before {
+    opacity: 1;
 }
 
 .filter-input:disabled + .filter-label,
-.filter-input:disabled + .filter-label::before,
-.filter-input:disabled + .filter-label::after {
+.filter-input:disabled + .filter-label::before {
     color: #a6a6a6;
     opacity: 0.25;
 }
@@ -1525,11 +1564,11 @@ a {
 }
 
 .filter-color {
-    border: none;
     margin: 0;
     margin-top: 34px;
     margin-bottom: 41px;
     padding: 0;
+    border: none;
 }
 
 .filter-color-option {
@@ -1539,6 +1578,7 @@ a {
 .filter-color-label {
     position: relative;
     display: block;
+    cursor: pointer;
 }
 
 .filter-input-checkbox + .filter-color-label::before {
@@ -1576,6 +1616,7 @@ a {
 .filter-bluetooth-label {
     position: relative;
     display: block;
+    cursor: pointer;
 }
 
 .filter-input-radio + .filter-bluetooth-label::before {
@@ -1649,7 +1690,6 @@ a {
     line-height: 24px;
     font-weight: 800;
     text-transform: uppercase;
-    text-align: center;
     color: rgba(0, 0, 0, 0.2);
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 50%;
@@ -1786,7 +1826,7 @@ a {
 }
 
 .pagination-forward {
-    margin-left: 185px;
+    margin-left: 186px;
     padding-left: 30px;
     padding-right: 25px;
 }
