@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'Gilroy';
+    font-family: "Gilroy";
     src:
-        local('Gilroy'),
+        local("Gilroy"),
         url("../fonts/web/gilroyextrabold.woff2") format("woff2");
     font-style: normal;
     font-weight: bold;
 }
 
 @font-face {
-    font-family: 'Gilroy';
+    font-family: "Gilroy";
     src:
         local(Gilroy),
         url("../fonts/web/gilroylight.woff2") format("woff2");
@@ -17,18 +17,18 @@
 }
 
 @font-face {
-    font-family: 'OpenSans';
+    font-family: "OpenSans";
     src:
-        local('OpenSans'),
+        local("OpenSans"),
         url("../fonts/web/opensanslight.woff2") format("woff2");
     font-style: normal;
     font-weight: light;
 }
 
 @font-face {
-    font-family: 'OpenSans';
+    font-family: "OpenSans";
     src:
-        local('OpenSans'),
+        local("OpenSans"),
         url("../fonts/web/opensans.woff2") format("woff2");
     font-style: normal;
     font-weight: normal;
@@ -66,7 +66,13 @@ a {
 }
 
 .main-header {
-    max-width: 1040px;
+    min-width: 1160px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-layout {
+    width: 1040px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px; 
@@ -133,6 +139,7 @@ a {
     padding-left: 40px;
     padding-right: 10px;
     padding-bottom: 14px;
+    padding-top: 0px;
     background-image: url("../img/search.svg");
     background-repeat: no-repeat;
     background-position: 4px 2px;
@@ -354,9 +361,11 @@ a {
 
 .items-description {
     position: relative;
-    max-width: 1160px;
+    width: 1160px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .items-slider-controls {
@@ -538,10 +547,12 @@ a {
 }
 
 .popular {
-    max-width: 1160px;
+    width: 1160px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .popular-list {
@@ -640,11 +651,14 @@ a {
 }
 
 .services {
+    min-width: 1160px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-image: linear-gradient(#ffffff 0px, #ffffff 101px, #e5e5e5 101px,  #e5e5e5 388px, #ffffff 388px);
 }
 
 .services-layout {
-    max-width: 1160px;
+    width: 1160px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 94px;
@@ -747,10 +761,12 @@ a {
 }
 
 .brands {
-    max-width: 1160px;
+    width: 1160px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px; 
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px; 
 }
 
 .brands-list {
@@ -781,37 +797,39 @@ a {
 
 .brand-dji:hover,
 .brand-dji:focus {
-    background-image: url('../img/logo-dji-hover.jpg');
+    background-image: url("../img/logo-dji-hover.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .brand-sp-gadgets:hover,
 .brand-sp-gadgets:focus {
-    background-image: url('../img/logo-spgadgets-hover.jpg');
+    background-image: url("../img/logo-spgadgets-hover.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .brand-gopro:hover,
 .brand-gopro:focus {
-    background-image: url('../img/logo-gopro-hover.jpg');
+    background-image: url("../img/logo-gopro-hover.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .brand-vive:hover,
 .brand-vive:focus {
-    background-image: url('../img/logo-vive-hover.jpg');
+    background-image: url("../img/logo-vive-hover.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .company-info-layout {
-    max-width: 1160px;
+    width: 1160px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 82px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .company-info-positioner {
@@ -997,6 +1015,7 @@ a {
     padding-top: 16px;
     padding-left: 19px;
     flex-grow: 2;
+    resize: vertical;
 }
 
 .popup-label {
@@ -1065,13 +1084,16 @@ a {
 }
 
 .main-footer {
-    background-color: #464646;
+    min-width: 1160px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 65px;
     padding-top: 55px;
+    background-color: #464646;
 }
 
 .footer-layout {
-    max-width: 1160px;
+    width: 1160px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1248,7 +1270,7 @@ a {
     width: 27px;
     height: 35px;
     opacity: 1;
-    background-image: url('../img/logo-html.svg');
+    background-image: url("../img/logo-html.svg");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -1370,7 +1392,7 @@ a {
 }
 
 .sort-layout {
-    max-width: 1160px;
+    width: 1160px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1430,17 +1452,17 @@ a {
     display: block;
     width: 11px;
     height: 10px;
-    background-image: url('../img/logo-html.svg');
+    background-image: url("../img/logo-html.svg");
 }
 
 .asc-link {
-    background-image: url('../img/icon-up-dir.svg');
+    background-image: url("../img/icon-up-dir.svg");
     opacity: 0.2;
 }
 
 .desc-link {
     margin-left: 19px;
-    background-image: url('../img/icon-down-dir.svg');
+    background-image: url("../img/icon-down-dir.svg");
 }
 
 .catalog-columns {
