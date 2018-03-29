@@ -123,6 +123,7 @@ a {
 .user-search {
     box-sizing: border-box;
     width: 450px;
+    font-size: 0;
 }
 
 .search-field {
@@ -135,6 +136,7 @@ a {
     background-image: url("../img/search.svg");
     background-repeat: no-repeat;
     background-position: 4px 2px;
+    font-size: 15px;
 }
 
 .search-field:focus {
@@ -146,6 +148,7 @@ a {
     visibility: hidden;
     width: 85px;
     height: 49px;
+    font-size: 15px;
     outline: none;
     border: none;
     background: none;
