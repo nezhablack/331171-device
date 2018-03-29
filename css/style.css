@@ -144,12 +144,11 @@ a {
 
 .button-search {
     visibility: hidden;
+    width: 85px;
+    height: 49px;
     outline: none;
     border: none;
     background: none;
-    margin-left: -5px;
-    width: 85px;
-    height: 49px;
     border: 2px solid #000000;
 }
 
@@ -1476,16 +1475,12 @@ a {
     background-color: #000000;
 }
 
-.filter-input + .filter-label::before {
-    opacity: 1;
-}
-
 .filter-input:hover + .filter-label::before,
 .filter-input:focus + .filter-label::before {
     opacity: 0.6;
 }
 
-.filter-input + .filter-label::before {
+.filter-input:checked + .filter-label::before {
     opacity: 1;
 }
 
