@@ -15,7 +15,7 @@
       <div class="user-menu">
         <form class="user-search" action="https://echo.htmlacademy.ru" method="get">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input class="search-field" type="search" name="search-field" id="search" placeholder="Поиск по сайту">
+          <input class="search-field" type="search" name="search-field" id="search" value="" placeholder="Поиск по сайту" required pattern=".+">
           <button class="button-search" type="submit" tabindex="0">Найти</button>
         </form>
         <ul class="header-user-navigation">
@@ -178,8 +178,8 @@
     </section>
     <section class="services">
       <div class="services-layout">
-        <h2 class="visually-hidden">Услуги</h2>
         <div class="services-positioner">
+        <h2 class="visually-hidden">Услуги</h2>
           <ul class="services-list">
             <li class="services-item">
               <button type="button" class="button button-service button-service-1 button-service-active">Доставка</button>

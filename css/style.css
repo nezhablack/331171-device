@@ -142,7 +142,6 @@ a {
 .search-field {
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid transparent;
     width: 356px;
     height: 49px;
     padding-left: 40px;
@@ -150,6 +149,40 @@ a {
     background-image: url("../img/search.svg");
     background-repeat: no-repeat;
     background-position: 3px;
+    color: #000000;
+    border-bottom: 2px solid transparent;
+}
+
+.search-field::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field:-moz-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field:hover::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.search-field:hover::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.search-field:hover:-moz-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.search-field:hover:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .search-field:focus {
@@ -157,8 +190,14 @@ a {
     border-bottom: 2px solid #000000;
 }
 
+.search-field[value=""]:valid {
+    outline: none;
+    border-bottom: 2px solid #000000;
+}
+
 .button-search {
     visibility: hidden;
+    vertical-align: bottom;
     width: 85px;
     height: 49px;
     font-size: 15px;
@@ -166,8 +205,6 @@ a {
     border: none;
     background: none;
     border: 2px solid #000000;
-    display: inline-block;
-    vertical-align: bottom;
 }
 
 .search-field:focus + .button-search {
@@ -182,8 +219,6 @@ a {
 }
 
 .button-search:active {
-    display: inline-block;
-    vertical-align: baseline;
     color: rgba(255, 255, 255, 0.3);
     background-color: #000000;
 }
@@ -215,7 +250,6 @@ a {
 
 .header-compare {
     margin-left: 216px;
-    /* margin-right: 40px; */
 }
 
 .header-cart {
@@ -1545,7 +1579,9 @@ a {
 }
 
 .filter-input:disabled + .filter-label,
-.filter-input:disabled + .filter-label::before {
+.filter-input:disabled + .filter-label::before,
+.filter-input:checked:disabled + .filter-label,
+.filter-input:checked:disabled + .filter-label::before {
     color: #a6a6a6;
     opacity: 0.25;
 }
@@ -1906,4 +1942,3 @@ a {
     padding-left: 10px;
     opacity: 0.3;
 }
-
