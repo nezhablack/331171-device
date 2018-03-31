@@ -6,7 +6,7 @@
         url("../fonts/web/gilroyextrabold.woff") format("woff"),
         url('../fonts/gilroy/Gilroyextrabold.ttf') format("ttf");
     font-style: normal;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 @font-face {
@@ -17,7 +17,7 @@
         url("../fonts/web/gilroylight.woff") format("woff"),
         url('../fonts/gilroy/Gilroylight.ttf') format("ttf");
     font-style: normal;
-    font-weight: light;
+    font-weight: 300;
 }
 
 @font-face {
@@ -28,7 +28,7 @@
         url("../fonts/web/opensanslight.woff") format("woff"),
         url("../fonts/open_sans/OpenSans-Light.ttf") format("ttf");
     font-style: normal;
-    font-weight: light;
+    font-weight: 300;
 }
 
 @font-face {
@@ -39,7 +39,7 @@
         url("../fonts/web/opensans.woff") format("woff"),
         url("../fonts/open_sans/OpenSans-Regular.ttf") format("ttf");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 body {
@@ -446,7 +446,7 @@ a {
     position: relative;
     z-index: 2;
     display: none;
-    margin-bottom: 109px;
+    margin-bottom: 113px;
     padding-top: 80px;
     padding-left: 599px;
     background-image: linear-gradient(#f7e296 113px, #ffffff 113px);
@@ -527,6 +527,10 @@ a {
     letter-spacing: 0.01em;
 }
 
+.promo-paragraph {
+    color: #464646;
+}
+
 .features {
     margin-top: 50px;
     border-collapse: collapse;
@@ -545,6 +549,13 @@ a {
 
 .features-quality:first-child {
     width: 160px;
+}
+
+.features-description {
+    padding-top: 7px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #464646;
 }
 
 .button {
@@ -743,6 +754,7 @@ a {
 .services-info {
     margin: 0;
     padding: 0;
+    color: #464646;
 }
 
 .services-slide {
@@ -889,7 +901,7 @@ a {
     font-size: 47px;
     line-height: 57px;
     font-weight: 800;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.012em;
 }
 
 .company-info-heading::before {
@@ -908,13 +920,14 @@ a {
 
 .description {
     margin-bottom: 30px;
+    color: #464646;
 }
 
 .transport-list {
     font-family: "Gilroy", Arial, sans-serif;
     font-weight: 800;
-    margin-top: 70px;
-    margin-bottom: 60px;
+    margin-top: 66px;
+    margin-bottom: 54px;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
@@ -924,6 +937,8 @@ a {
 .transport-item {
     position: relative;
     padding-left: 35px;
+    font-size: 16px;
+    line-height: 40px;
 }
 
 .transport-item::before {
@@ -937,10 +952,6 @@ a {
     border-radius: 50%;
 }
 
-.transport-item:nth-child(2) {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 .company-details {
     width: 220px;
@@ -954,6 +965,7 @@ a {
 
 .contacts-info {
     margin-bottom: 40px;
+    color: #464646;
 }
 
 .map-link {
@@ -1012,15 +1024,50 @@ a {
     width: 55px;
     height: 55px;
     background-color: transparent;
-    background-image: url("../img/modal-close.svg");
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.5;
     border: 0;
     border-radius: 50%;
     outline: none;
     border: none;
     cursor: pointer;
+}
+
+.modal-map-close {
+    background-image: url("../img/modal-close.svg");
+    opacity: 0.5;
+}
+
+.letter-popup-close {
+    background-image: url("../img/menu-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.letter-popup-close:hover {
+    background-image: none;
+}
+
+.letter-popup-close::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    background-image: url("../img/modal-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.letter-popup-close:hover::before {
+    opacity: 1;
+}
+
+.letter-popup-close:active {
+    background-image: url("../img/menu-close.svg");
+    opacity: 0.3;
 }
 
 .write-us {
@@ -1182,8 +1229,8 @@ a {
 }
 
 .footer-compare {
-    margin-left: 10px;
-    margin-right: 7px;
+    margin-left: 13px;
+    margin-right: 9px;
 }
 
 .footer-svg {
@@ -1380,6 +1427,7 @@ a {
     font-weight: 800;
     margin-top: 33px;
     margin-bottom: 15px;
+    letter-spacing: 0.012em;
 }
 
 .heading-layout {
@@ -1489,10 +1537,6 @@ a {
     font-weight: 400;
 }
 
-.sort-list .active {
-    opacity: 1;
-}
-
 .sort-item:nth-child(2) {
     margin-left: 30px;
     margin-right: 30px;
@@ -1500,7 +1544,22 @@ a {
 
 .sort-link {
     color: #000000;
+}
+
+.sort-list .current {
+    opacity: 1;
+}
+
+.sort-list .active {
     opacity: 0.3;
+}
+
+.sort-list .active:hover {
+    opacity: 0.6;
+}
+
+.sort-list .active:active {
+    opacity: 1;
 }
 
 .order-link {
@@ -1622,6 +1681,10 @@ a {
     box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.toggle:active {
+    transform: scale(1.2);
 }
 
 .toggle-min {
@@ -1861,6 +1924,7 @@ a {
     font-size: 13px;
     line-height: 20px;
     font-weight: 300;
+    color: #464646;
     opacity: 0.5;
 }
 

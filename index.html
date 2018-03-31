@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -70,18 +70,18 @@
   </header>
   <main class="container">
     <h1 class="visually-hidden">Магазин техники Девайс</h1>
-    <section class="items-description">
+    <article class="items-description">
       <h2 class="visually-hidden">Описание самых популярных товаров</h2>
       <div class="items-slider-controls">
         <div class="slider-btn slider-btn-1 slider-btn-active" tabindex="0"></div>
         <div class="slider-btn slider-btn-2" tabindex="0"></div>
         <div class="slider-btn slider-btn-3" tabindex="0"></div>
       </div>
-      <article class="promo-slider-slide promo-slide-1 promo-slide-active">
+      <section class="promo-slider-slide promo-slide-1 promo-slide-active">
         <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
         <img class="promo-image promo-image-monopod" src="img/slider-monopod.png" width="384" height="486" alt="Моноподы">
         <b class="promo-motto">Делай селфи, как&#160;Бен Стиллер!</b>
-        <p>
+        <p class="promo-paragraph">
           Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.
         </p>
         <a class="button details" href="#">Подробнее</a>
@@ -97,12 +97,12 @@
             <td class="features-description">Материал</td>
           </tr>
         </table>
-      </article>
-      <article class="promo-slider-slide promo-slide-2">
+      </section>
+      <section class="promo-slider-slide promo-slide-2">
         <h3 class="visually-hidden">Мотивирующий фитнес-браслет</h3>
         <img class="promo-image promo-image-band" src="img/slider-band.png" width="345" height="485" alt="Фитнес-браслет">
         <b class="promo-motto">Худеем правильно!</b>
-        <p>
+        <p class="promo-paragraph">
           Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
         </p>
         <a class="button details" href="#">Подробнее</a>
@@ -114,12 +114,12 @@
             <td class="features-description">Без подзарядки</td>
           </tr>
         </table>
-      </article>
-      <article class="promo-slider-slide promo-slide-3">
+      </section>
+      <section class="promo-slider-slide promo-slide-3">
         <h3 class="visually-hidden">Квадрокоптер с мощным лазером</h3>
         <img class="promo-image promo-image-drone" src="img/slider-drone.png" width="526" height="334" alt="Квадрокоптер">
         <b class="promo-motto">Порхает как&#160;бабочка, жалит как&#160;пчела!</b>
-        <p>
+        <p class="promo-paragraph">
           Этот обычный, на первый взгляд, квадрокоптер оснащен мощным&#160;лазером, замаскированным под стандартную камеру.
         </p>
         <a class="button details" href="#">Подробнее</a>
@@ -133,8 +133,8 @@
             <td class="features-description">Радиус поражения</td>
           </tr>
         </table>
-      </article>
-    </section>
+      </section>
+    </article>
     <section class="popular">
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="popular-list">
@@ -272,7 +272,7 @@
           <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779994!2d37.52742931633158!3d55.68703098053579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522138123703"
             width="960" height="560" style="border:0" allowfullscreen></iframe>
           <img class="image-map" src="img/map-big.jpg" width="960" height="560" alt="Офис компании по адресу улица Строителей 15, Москва">
-          <button class="modal-close" type="button">
+          <button class="modal-close modal-map-close" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
         </section>
@@ -291,7 +291,7 @@
           <textarea class="popup-user-letter" name="letter" rows="8" placeholder="В свободной форме"></textarea>
         </label>
         <button type="submit" class="button button-send">Отправить</button>
-        <button type="button" class="modal-close">
+        <button type="button" class="modal-close letter-popup-close">
           <span class="visually-hidden">Закрыть</span>
         </button>
       </form>
