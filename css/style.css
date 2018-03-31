@@ -600,7 +600,7 @@ a {
     width: 150px;
     padding-right: 25px;
     padding-left: 45px;
-    margin-top: 44px;
+    margin-top: 47px;
 }
 
 .popular {
@@ -885,7 +885,7 @@ a {
     width: 1160px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 82px;
+    margin-bottom: 81px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -915,7 +915,7 @@ a {
 }
 
 .about-us {    
-    width: 495px;
+    width: 475px;
 }
 
 .description {
@@ -925,9 +925,11 @@ a {
 
 .transport-list {
     font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 40px;
     font-weight: 800;
     margin-top: 66px;
-    margin-bottom: 54px;
+    margin-bottom: 57px;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
@@ -937,14 +939,12 @@ a {
 .transport-item {
     position: relative;
     padding-left: 35px;
-    font-size: 16px;
-    line-height: 40px;
 }
 
 .transport-item::before {
     content: "";
     position: absolute;
-    top: 11px;
+    top: 17px;
     left: 4px;
     width: 5px;
     height: 5px;
@@ -972,7 +972,7 @@ a {
     display: block;
     width: 560px;
     height: 222px;
-    margin-bottom: 68px;
+    margin-bottom: 70px;
 }
 
 .modal {
@@ -1571,12 +1571,27 @@ a {
 
 .asc-link {
     background-image: url("../img/icon-up-dir.svg");
-    opacity: 0.2;
 }
 
 .desc-link {
     margin-left: 19px;
     background-image: url("../img/icon-down-dir.svg");
+}
+
+.order-active {
+    opacity: 0.2;
+}
+
+.order-active:hover {
+    opacity: 0.4;
+}
+
+.order-active:active {
+    opacity: 1;
+}
+
+.order-current {
+    opacity: 1;
 }
 
 .catalog-columns {
