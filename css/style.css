@@ -225,7 +225,8 @@ a {
 
 .user-link {
     position: relative;
-    display: block;
+    display: inline-block;
+    vertical-align: baseline;
     padding-left: 20px;
 }
 
@@ -248,12 +249,13 @@ a {
     background-image: url("../img/user.svg");
 }
 
-.header-compare {
-    margin-left: 216px;
+.header-login {
+    margin-right: auto;
 }
 
-.header-cart {
-    margin-left: auto;
+.header-compare {
+    width: 95px;
+    margin-right: 40px;
 }
 
 .user-compare::before {
@@ -1389,18 +1391,8 @@ a {
     opacity: 0.3;
 }
 
-.header-logout {
-    margin-left: 19px;
-    opacity: 0.3;
-}
-
 .user-logout {
-    display: block;
-}
-
-.user-login-compare {
-    margin-left: 60px;
-    margin-right: 42px;
+    opacity: 0.3;
 }
 
 .user-login-compare .user-link::before {
@@ -1647,6 +1639,11 @@ a {
 .filter-input:checked:hover + .filter-label::before,
 .filter-input:checked:focus + .filter-label::before {
     opacity: 0.6;
+}
+
+.filter-input:focus + .filter-label,
+.filter-input:checked:focus + .filter-label {
+    outline: -webkit-focus-ring-color auto 5px;
 }
 
 .filter-input:checked + .filter-label::before {
