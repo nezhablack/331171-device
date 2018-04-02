@@ -743,24 +743,25 @@ a {
 
 .services-title {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 47px;
     line-height: 57px;
     font-weight: 800;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.018em;
 }
 
 .services-info {
     margin: 0;
     padding: 0;
     color: #464646;
+    letter-spacing: 0.018em;
 }
 
 .services-slide {
     display: none;
     position: relative;
-    width: 460px;
+    width: 455px;
     margin-left: 21px;
     margin-top: 68px;
 }
