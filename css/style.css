@@ -1027,49 +1027,22 @@ a {
     width: 55px;
     height: 55px;
     background-color: transparent;
+    background-image: url("../img/modal-close.svg");
     background-repeat: no-repeat;
     background-position: center;
     border: 0;
     border-radius: 50%;
     outline: none;
     border: none;
+    opacity: 0.5;
     cursor: pointer;
 }
 
-.modal-map-close {
-    background-image: url("../img/modal-close.svg");
-    opacity: 0.5;
-}
-
-.letter-popup-close {
-    background-image: url("../img/menu-close.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.letter-popup-close:hover {
-    background-image: none;
-}
-
-.letter-popup-close::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 55px;
-    height: 55px;
-    background-image: url("../img/modal-close.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
-}
-
-.letter-popup-close:hover::before {
+.modal-close:hover {
     opacity: 1;
 }
 
-.letter-popup-close:active {
-    background-image: url("../img/menu-close.svg");
+.modal-close:active {
     opacity: 0.3;
 }
 
