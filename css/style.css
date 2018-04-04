@@ -324,6 +324,7 @@ a {
     z-index: 3;
     display: block;
     margin-left: -1px;
+    color: #000000;
 }
 
 .catalog-menu::after {
@@ -480,7 +481,7 @@ a {
 }
 
 .promo-slide-1 {
-    padding-right: 60px;
+    padding-right: 75px;
 }
 
 .promo-slide-1::before {
@@ -600,9 +601,9 @@ a {
 
 .details {
     width: 150px;
+    margin-top: 44px;
     padding-right: 25px;
     padding-left: 45px;
-    margin-top: 47px;
 }
 
 .popular {
@@ -888,7 +889,7 @@ a {
     width: 1160px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 81px;
+    margin-bottom: 82px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -931,8 +932,8 @@ a {
     font-size: 16px;
     line-height: 40px;
     font-weight: 800;
-    margin-top: 66px;
-    margin-bottom: 57px;
+    margin-top: 65px;
+    margin-bottom: 55px;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
@@ -957,7 +958,7 @@ a {
 
 
 .company-details {
-    width: 220px;
+    width: 222px;
     padding-right: 17px;
     padding-left: 23px;
 }
@@ -975,7 +976,7 @@ a {
     display: block;
     width: 560px;
     height: 222px;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
 }
 
 .modal {
@@ -1251,7 +1252,7 @@ a {
 .footer-address::after {
     content: "";
     position: absolute;
-    left: 3px;
+    left: 0;
     top: 109px;
     width: 80px;
     border-bottom: 7px solid #ffc600;
