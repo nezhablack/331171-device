@@ -575,6 +575,7 @@ a {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #000000;
+    white-space: nowrap;
     cursor: pointer;
 }
 
@@ -1348,7 +1349,7 @@ a {
 .html-link {
     display: block;
     width: 27px;
-    height: 35px;
+    height: 38px;
     opacity: 1;
     background-image: url("../img/logo-html.svg");
     background-size: contain;
@@ -1522,6 +1523,7 @@ a {
 
 .sort-link {
     color: #000000;
+    white-space: nowrap;
 }
 
 .sort-list .current {
