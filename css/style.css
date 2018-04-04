@@ -1578,7 +1578,7 @@ a {
 }
 
 .filter {
-    width: 225px;
+    width: 224px;
     padding-left: 61px;
     padding-right: 47px;
 }
@@ -1610,7 +1610,7 @@ a {
     position: absolute;
     bottom: 34px;
     left: 0;
-    width: 215px;
+    width: 202px;
     height: 2px;
     background-color: #000000;
 }
@@ -1996,7 +1996,7 @@ a {
 
 
 .footer-logout {
-    margin-left: 19px;
+    margin-left: 7px;
     padding-left: 10px;
     opacity: 0.3;
 }
