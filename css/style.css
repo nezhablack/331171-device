@@ -1267,23 +1267,23 @@ a {
 .footer-contact-positioner {
     display: flex;
     margin-top: 48px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-contact-positioner::before {
     content: "";
-    align-self: center;
     width: 80px;
     height: 7px;
     background-color: #ffc600;
 }
 
 .footer-social {
-    width: 140px;
+    max-width: 140px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin: 0;
-    margin-left: 428px;
+    margin-right: 58px;
     padding: 0;
     list-style: none;
 }
@@ -1298,7 +1298,12 @@ a {
     position: relative;
     width: 32px;
     height: 32px;
+    margin-right: 22px;
     border-radius: 50%;
+}
+
+.social-button:nth-child(3n) {
+    margin-right: 0;
 }
 
 .social-button::before {
@@ -1342,7 +1347,6 @@ a {
 
 .html-link {
     display: block;
-    margin-left: auto;
     width: 27px;
     height: 35px;
     opacity: 1;
